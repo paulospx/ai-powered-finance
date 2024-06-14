@@ -1,0 +1,63 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ai_powered_finance"
+version = "0.1.0"
+description = "The world of finance is undergoing a significant transformation, driven by the rapid advancement of Artificial Intelligence (AI) technologies. As AI continues to disrupt traditional financial practices, it's essential for financial professionals to stay ahead of the curve and understand the vast potential of AI in finance."
+readme = "README.rst"
+authors = [
+  {name = "Paulo P", email = "pssp25@hotmail.com"}
+]
+maintainers = [
+  {name = "Paulo P", email = "pssp25@hotmail.com"}
+]
+classifiers = [
+
+]
+license = {text = "MIT license"}
+dependencies = [
+  
+]
+
+[project.optional-dependencies]
+dev = [
+    "coverage",  # testing
+    "mypy",  # linting
+    "pytest",  # testing
+    "ruff"  # linting
+]
+
+[project.urls]
+
+bugs = "https://github.com/paulospx/ai_powered_finance/issues"
+changelog = "https://github.com/paulospx/ai_powered_finance/blob/master/changelog.md"
+homepage = "https://github.com/paulospx/ai_powered_finance"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.package-data]
+"*" = ["*.*"]
+
+
+
+
+# Mypy
+# ----
+
+[tool.mypy]
+files = "."
+
+# Use strict defaults
+strict = true
+warn_unreachable = true
+warn_no_return = true
+
+[[tool.mypy.overrides]]
+# Don't require test functions to include types
+module = "tests.*"
+allow_untyped_defs = true
+disable_error_code = "attr-defined"
+
