@@ -22,6 +22,11 @@ In this seminar, we'll delve into the exciting realm of AI-powered finance, expl
 - Entrepreneurs and innovators exploring the potential of AI in fintech and financial services
 
 
+# Goodies
+
+Repository to generate you face as a sticker:
+- https://replicate.com/fofr/face-to-sticker
+
 # License
 * Free software: MIT license
 
